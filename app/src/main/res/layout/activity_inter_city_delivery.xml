@@ -1,0 +1,389 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg1"
+    android:focusableInTouchMode="true">
+
+    <include layout="@layout/toolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/tvOneWay"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="One Way"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/rectangle_left_rounded"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        <TextView
+            android:id="@+id/tvRoundTrip"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Round Trip"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/white_rectangle_right_rounded"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/flIntraCity"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:paddingBottom="@dimen/dp_10"
+        android:isScrollContainer="false"
+        android:background="@color/transparent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10" >
+
+            <LinearLayout
+                android:id="@+id/llSelectCity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/rectangle_rounded_corner"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <com.pikndel.utils.HintSpinner
+                        android:id="@+id/spSelectCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:spinnerMode="dropdown"
+                        android:fadingEdge="none"
+                        android:scrollbars="none"
+                        android:gravity="center"
+                        android:background="@null"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        />
+                    <ImageView
+                        android:id="@+id/ivSelectCIty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingRight="@dimen/dp_10"
+                        android:layout_gravity="right|center"
+                        android:src="@mipmap/down_arr"
+                        android:padding="@dimen/dp_8"/>
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSelectCityError"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Please select the city."
+                android:textColor="@color/red"
+                android:layout_marginTop="@dimen/dp_5"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                />
+
+            <TextView
+                android:id="@+id/tvPickUpLocation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:text="Pick-up Location"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:background="@drawable/rectangle_rounded_corner_edittext"
+                android:padding="@dimen/dp_12"
+                android:inputType="text|textCapWords"
+                android:imeOptions="actionNext"
+                android:ellipsize="end"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginTop="@dimen/dp_10"
+                />
+
+            <TextView
+                android:id="@+id/tvPickUpError"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Please select pick-up location."
+                android:textColor="@color/red"
+                android:layout_marginTop="@dimen/dp_5"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                />
+
+            <TextView
+                android:id="@+id/tvDeliveryLocation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:text="Delivery Location"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:background="@drawable/rectangle_rounded_corner_edittext"
+                android:padding="@dimen/dp_12"
+                android:inputType="text|textCapWords"
+                android:imeOptions="actionDone"
+                android:scrollHorizontally="true"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginTop="@dimen/dp_10" />
+            <TextView
+                android:id="@+id/tvDeliveryError"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Please select delivery city."
+                android:textColor="@color/red"
+                android:layout_marginTop="@dimen/dp_5"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                />
+
+
+            <TextView
+                android:id="@+id/tvPackgeType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Package Type"
+                android:textColor="@color/black"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="@dimen/dp_15"
+                />
+
+            <LinearLayout
+                android:id="@+id/llNonFragile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/rectangle_rounded_corner"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <com.pikndel.utils.HintSpinner
+                        android:id="@+id/spNonFragileGoods"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:spinnerMode="dropdown"
+                        android:fadingEdge="none"
+                        android:scrollbars="none"
+                        android:gravity="center"
+                        android:background="@null"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        />
+                    <ImageView
+                        android:id="@+id/ivNonFragileGoods"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingRight="@dimen/dp_10"
+                        android:layout_gravity="right|center"
+                        android:src="@mipmap/down_arr"
+                        android:padding="@dimen/dp_8"/>
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvNonFragileError"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Please select package type."
+                android:textColor="@color/red"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginTop="@dimen/dp_5"
+                />
+
+            <TextView
+                android:id="@+id/tvPkgWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Package Weight"
+                android:textColor="@color/black"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="@dimen/dp_15"
+                />
+
+            <LinearLayout
+                android:id="@+id/llEnterWght"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/rectangle_rounded_corner"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <com.pikndel.utils.HintSpinner
+                        android:id="@+id/spWeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:spinnerMode="dropdown"
+                        android:fadingEdge="none"
+                        android:scrollbars="none"
+                        android:gravity="center"
+                        android:background="@null"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        />
+                    <ImageView
+                        android:id="@+id/ivWeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingRight="@dimen/dp_10"
+                        android:layout_gravity="right|center"
+                        android:src="@mipmap/down_arr"
+                        android:padding="@dimen/dp_8"/>
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvDPackagwgtError"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Please select weight."
+                android:textColor="@color/red"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginTop="@dimen/dp_5"
+                />
+            <EditText
+                android:id="@+id/etEnterWeight"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:hint="Enter Weight"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:background="@drawable/rectangle_rounded_corner"
+                android:padding="@dimen/dp_12"
+                android:inputType="number"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:imeOptions="actionDone"
+                android:visibility="gone"
+                android:maxLength="3"
+                android:layout_marginTop="@dimen/dp_10" />
+
+            <TextView
+                android:id="@+id/tvEntWghtError"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Please enter the weight."
+                android:textColor="@color/red"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginTop="@dimen/dp_1"
+                />
+
+            <TextView
+                android:id="@+id/tvCOD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Any COD to be collected?"
+                android:textColor="@color/black"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="@dimen/dp_15"
+                />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/btYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:button="@drawable/selector_radio_button"
+                    android:drawablePadding="@dimen/dp_10"/>
+                <RadioButton
+                    android:id="@+id/btNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:button="@drawable/selector_radio_button"
+                    android:layout_marginLeft="@dimen/dp_60"
+                    android:checked="true"
+                    android:drawablePadding="@dimen/dp_10"/>
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/etEnterAmount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:hint="Enter Amount"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:background="@drawable/rectangle_rounded_corner_edittext"
+                android:padding="@dimen/dp_12"
+                android:inputType="number"
+                android:visibility="gone"
+                android:imeOptions="actionDone"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginTop="@dimen/dp_10"
+                android:maxLength="6"
+                />
+            <TextView
+                android:id="@+id/tvEntAmontError"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Please enter the amount."
+                android:textColor="@color/red"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginTop="@dimen/dp_1"/>
+
+            <TextView
+                android:id="@+id/tvNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Next"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/dp_10"
+                android:padding="@dimen/dp_12"
+                android:textColorHint="@color/white"
+                android:background="@drawable/rounded_corner_drawable"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

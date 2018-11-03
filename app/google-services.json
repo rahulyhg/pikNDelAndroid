@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "107480678462",
+    "firebase_url": "https://pickndel-5ca79.firebaseio.com",
+    "project_id": "pickndel-5ca79",
+    "storage_bucket": "pickndel-5ca79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107480678462:android:7a7add274b13f317",
+        "android_client_info": {
+          "package_name": "com.pikndel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107480678462-d4rv34alqjsnn9cl10lpvlqegf89de1t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pikndel",
+            "certificate_hash": "772EE11517BE4C9844C18FF15335A75F734911D9"
+          }
+        },
+        {
+          "client_id": "107480678462-kjju2jqs4g0rmdaim4vqhcai97rggb5g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlEwLIhyfbIGxdY_wcHravH8PbPhOiz6U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107480678462-kjju2jqs4g0rmdaim4vqhcai97rggb5g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

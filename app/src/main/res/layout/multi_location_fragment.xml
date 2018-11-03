@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_multiple_location"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:background="@drawable/drawable_white_black_stroke"
+        android:padding="@dimen/dp_10"
+        android:visibility="visible"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:maxLength="3"
+        android:inputType="number"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_10"
+        />
+    <TextView
+        android:id="@+id/tvErrorLoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*Location should not be blank."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:textColor="@color/red"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/tvSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@drawable/rounded_corner_drawable"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_10"
+        android:padding="@dimen/dp_12"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"/>
+
+</LinearLayout>

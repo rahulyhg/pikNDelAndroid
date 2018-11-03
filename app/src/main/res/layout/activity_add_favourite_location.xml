@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg1" >
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_30"
+            android:paddingRight="@dimen/dp_30"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/etEnterName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/rounded_bg_edittext"
+                android:hint="Enter Name"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:padding="@dimen/dp_12"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:maxLength="30"
+                android:inputType="textPersonName|textCapWords"
+                />
+
+            <TextView
+                android:id="@+id/tvEnterNameError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Please enter name."
+                android:textColor="@color/red"
+                android:visibility="gone"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_5"/>
+
+            <EditText
+                android:id="@+id/etEnterContactNo"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/rounded_bg_edittext"
+                android:hint="Enter Contact No."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:padding="@dimen/dp_12"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:maxLength="10"
+                android:inputType="number"
+                android:drawablePadding="@dimen/dp_10"/>
+
+            <TextView
+                android:id="@+id/tvEnterContactNoError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Please enter contact no."
+                android:textColor="@color/red"
+                android:visibility="gone"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_5"
+                />
+
+            <LinearLayout
+                android:id="@+id/llAddressDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_15"
+                android:paddingLeft="@dimen/dp_30"
+                android:orientation="horizontal"
+                android:background="@drawable/rectangle_rounded_corner_blue"
+                android:layout_marginTop="@dimen/dp_10">
+
+                <TextView
+                    android:id="@+id/tv_Course"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:hint="Address Details"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    />
+
+                <ImageView
+                    android:id="@+id/ivDropDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:paddingRight="@dimen/dp_10"
+                    android:src="@mipmap/down_arr"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dp_10"
+                >
+
+                <EditText
+                    android:id="@+id/etHouseNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:hint="House No."
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:background="@drawable/rectangle_rounded_corner"
+                    android:paddingBottom="@dimen/dp_15"
+                    android:paddingTop="@dimen/dp_15"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/dp_12"
+                    android:imeOptions="actionNext"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    />
+
+                <TextView
+                    android:id="@+id/tvHouseNoError"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*Please enter house no."
+                    android:textColor="@color/red"
+                    android:visibility="gone"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    />
+
+                <EditText
+                    android:id="@+id/etFloor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:hint="Floor"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:background="@drawable/rectangle_rounded_corner"
+                    android:paddingBottom="@dimen/dp_15"
+                    android:paddingTop="@dimen/dp_15"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:paddingLeft="@dimen/dp_12"
+                    android:imeOptions="actionNext"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    />
+                <TextView
+                    android:id="@+id/tvFloorError"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*Please enter floor."
+                    android:textColor="@color/red"
+                    android:visibility="gone"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    />
+
+                <EditText
+                    android:id="@+id/etLandMark"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:hint="LandMark"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:background="@drawable/rectangle_rounded_corner"
+                    android:paddingBottom="@dimen/dp_15"
+                    android:paddingTop="@dimen/dp_15"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:paddingLeft="@dimen/dp_12"
+                    android:imeOptions="actionDone"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    />
+                <TextView
+                    android:id="@+id/tvLandMarkError"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*Please enter landmark."
+                    android:textColor="@color/red"
+                    android:visibility="gone"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    />
+
+                <TextView
+                    android:id="@+id/etArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:text="Area"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:background="@drawable/rectangle_rounded_corner"
+                    android:paddingBottom="@dimen/dp_15"
+                    android:paddingTop="@dimen/dp_15"
+                    android:paddingLeft="@dimen/dp_12"
+                    android:imeOptions="actionNext"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    />
+               <FrameLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical">
+                       <TextView
+                           android:id="@+id/tvAreaError"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="*Please enter area."
+                           android:textColor="@color/red"
+                           android:visibility="gone"
+                           android:textAppearance="?android:attr/textAppearanceSmall"
+                           android:layout_marginTop="@dimen/dp_5"
+                           android:layout_marginBottom="@dimen/dp_5"
+                           />
+                       <EditText
+                           android:id="@+id/etCity"
+                           android:layout_width="match_parent"
+                           android:layout_height="@dimen/dp_50"
+                           android:hint="City"
+                           android:textColor="@color/white"
+                           android:textColorHint="@color/white"
+                           android:background="@drawable/rectangle_rounded_corner"
+                           android:paddingBottom="@dimen/dp_15"
+                           android:paddingTop="@dimen/dp_15"
+                           android:paddingLeft="@dimen/dp_12"
+                           android:editable="false"
+                           android:singleLine="true"
+                           android:ellipsize="end"
+                           android:enabled="false"
+                           android:imeOptions="actionNext"
+                           android:layout_marginTop="@dimen/dp_10"
+                           android:textAppearance="?android:attr/textAppearanceSmall"
+                           />
+                       <TextView
+                           android:id="@+id/tvCityError"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="*Please enter city."
+                           android:textColor="@color/red"
+                           android:visibility="gone"
+                           android:textAppearance="?android:attr/textAppearanceSmall"
+                           android:layout_marginTop="@dimen/dp_5"
+                           android:layout_marginBottom="@dimen/dp_5"
+                           />
+                       <EditText
+                           android:id="@+id/etPincode"
+                           android:layout_marginTop="@dimen/dp_10"
+                           android:layout_width="match_parent"
+                           android:layout_height="@dimen/dp_50"
+                           android:background="@drawable/rounded_bg_edittext"
+                           android:hint="Pincode"
+                           android:textAppearance="?android:attr/textAppearanceSmall"
+                           android:textColorHint="@color/white"
+                           android:textColor="@color/white"
+                           android:padding="@dimen/dp_12"
+                           android:imeOptions="actionDone"
+                           android:singleLine="true"
+                           android:maxLength="6"
+                           android:inputType="number"
+                           android:drawablePadding="@dimen/dp_10"/>
+                       <TextView
+                           android:id="@+id/tvPincodeError"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="*Please enter pincode."
+                           android:textColor="@color/red"
+                           android:visibility="gone"
+                           android:textAppearance="?android:attr/textAppearanceSmall"
+                           android:layout_marginTop="@dimen/dp_5"
+                           android:layout_marginBottom="@dimen/dp_5"
+                           />
+                   </LinearLayout>
+                   <android.support.v7.widget.RecyclerView
+                       android:visibility="gone"
+                       android:id="@+id/rvPlaces"
+                       android:background="@color/dark_grey"
+                       android:padding="12dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"/>
+               </FrameLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvAddLocation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:gravity="center"
+                android:hint="Add Location"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/dp_10"
+                android:padding="@dimen/dp_12"
+                android:textColorHint="@color/white"
+                android:background="@drawable/rounded_corner_drawable"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+
+        </LinearLayout>
+</ScrollView>
+</LinearLayout>

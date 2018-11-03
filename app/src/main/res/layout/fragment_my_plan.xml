@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg1"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:layout_weight=".5">
+
+        <TextView
+            android:id="@+id/tvCurrntPlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Plan"
+            android:textColor="@color/black"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            />
+
+        <TextView
+            android:id="@+id/tvPlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/dp_10"
+            android:padding="@dimen/dp_12"
+            android:textColorHint="@color/white"
+            android:background="@drawable/rounded_corner_drawable"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        <TextView
+            android:id="@+id/tvChangePlan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/change_plan"
+            android:layout_margin="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5">
+
+        <TextView
+            android:id="@+id/tvContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:hint="Continue"
+            android:padding="@dimen/dp_12"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/dp_10"
+            android:textColorHint="@color/white"
+            android:background="@drawable/rounded_corner_drawable"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

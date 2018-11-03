@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/ractangle_gray_stroke"
+        android:padding="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_5">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp_5">
+
+            <ImageView
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginTop="@dimen/dp_30"
+                android:layout_marginBottom="@dimen/dp_30"
+                android:background="@color/dark_grey"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:id="@+id/imageView"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:src="@mipmap/pick_ic1"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvPickFrom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="Pick-up form"/>
+
+                        <TextView
+                            android:id="@+id/tvPickupCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="@dimen/dp_20"
+                            android:textColor="@color/text_lightblack"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:src="@mipmap/pick_ic2"  />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvDeliverTo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="Deliver to"/>
+
+                        <TextView
+                            android:id="@+id/tvDeliverCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:textColor="@color/text_lightblack"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivInfo"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_gravity="end|top"
+                android:layout_marginTop="@dimen/dp_4"
+                android:src="@mipmap/info_ic"  />
+
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

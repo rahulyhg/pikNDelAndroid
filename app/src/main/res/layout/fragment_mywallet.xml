@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg1">
+    <ScrollView
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:layout_width="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvPaymentHistory"
+        android:padding="@dimen/dp_15"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/payment_history"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:padding="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ractangle_gray_stroke">
+        <TextView
+            android:id="@+id/tvWalletBlnce"
+            android:text="@string/wallet_balance"
+            android:textColor="@color/black"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/wal"/>
+        <TextView
+            android:id="@+id/tvWalletBal"
+            android:padding="@dimen/dp_10"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+        <EditText
+            android:id="@+id/et_addmoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_20"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:background="@drawable/rectangle_rounded_corner_edittext"
+            android:textColor="@color/white"
+            android:text=""
+            android:paddingLeft="@dimen/dp_10"
+            android:hint="Enter the amount"
+            android:textColorHint="@color/white"
+            android:inputType="number"
+            android:maxLength="6"/>
+
+    <TextView
+        android:id="@+id/tvSavedCard"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:textColor="@color/black"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:padding="@dimen/dp_10"
+        android:text="@string/saved_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/ractangle_gray_stroke">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvCardNo"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/card_number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text=":"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvCardNumb"
+                android:textColor="@color/black"
+                android:text="46567979546464979"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvCardTypeBlue"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/card_type"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text=":"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvCardType"
+                android:textColor="@color/black"
+                android:text="@string/debit_card"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvNameCard"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/name_on_card"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text=":"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvNameOnCard"
+                android:textColor="@color/black"
+                android:text="Sameer"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvValid"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/valid_upto"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text=":"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvValidUpto"
+                android:textColor="@color/black"
+                android:text="06/2024"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+<LinearLayout
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_20"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvAddMoney"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/dp_5"
+        android:textColor="@color/white"
+        android:text="@string/add_money"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_rounded_corner"/>
+    <TextView
+        android:id="@+id/tvAddNewCard"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:textColor="@color/white"
+        android:text="@string/add_new_card"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_rounded_corner_blue"/>
+
+</LinearLayout>
+</LinearLayout>

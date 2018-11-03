@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg1">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_15"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+         >
+            <TextView
+                android:id="@+id/txtSignup"
+                android:paddingTop="@dimen/dp_5"
+                android:paddingBottom="@dimen/dp_5"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/text_lightblack"
+                android:text="Hey aaa. where can we contact you?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <LinearLayout
+                android:id="@+id/llMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:orientation="horizontal"
+                android:background="@drawable/rectangle_rounded_corner"
+                android:layout_marginTop="@dimen/dp_25"
+                android:visibility="visible">
+                <TextView
+                    android:id="@+id/tvNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+91"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:visibility="visible"/>
+                <EditText
+                    android:id="@+id/etMobileNumber"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:textColor="@color/white"
+                    android:singleLine="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="Enter Mobile No."
+                    android:textColorHint="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:imeOptions="actionDone"
+                    android:maxLength="10"
+                    android:inputType="number"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:background="@null"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txtErrorOne"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_5"
+                android:paddingBottom="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_gravity="bottom"
+                android:text="*Please enter password."
+                android:textColor="@color/red"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llDone"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_35"
+        android:layout_marginRight="@dimen/dp_35"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="@drawable/rounded_corner_drawable">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:background="@mipmap/del_icon5"
+            android:layout_marginRight="@dimen/dp_5"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llProgress"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_80"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/bar2"/>
+       <!-- <TextView
+            android:text="25%"
+            android:textColor="@color/white"
+            android:paddingTop="@dimen/dp_2"
+            android:paddingBottom="@dimen/dp_5"
+            android:gravity="center"
+            android:id="@+id/tvPercentage"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/reg_img"/>
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:thumb="@drawable/thumb_bg"
+            android:progressDrawable="@drawable/progress"
+            android:max="100"
+            android:progress="25"
+            android:minHeight="@dimen/dp_10"
+            android:maxHeight="@dimen/dp_10"
+            />-->
+    </LinearLayout>
+</LinearLayout>

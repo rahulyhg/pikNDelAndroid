@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:background="@drawable/dialog_shape">
+        <TextView
+            android:id="@+id/tvThanku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thank You!"
+            android:layout_gravity="center"
+            android:textSize="@dimen/dp_20"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dp_25"/>
+        <TextView
+            android:id="@+id/tvGetBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We will get back to you shortly"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_lightblack"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginBottom="@dimen/dp_25"/>
+
+
+        <ImageView
+            android:id="@+id/ivCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/con1"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dp_10"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvCompPlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comparison between Plans?"
+            android:textColor="@color/text_lightblack"
+            android:layout_marginTop="@dimen/dp_15"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        <TextView
+            android:id="@+id/tvPlanVsPlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plan Vs Plan"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium"            android:paddingTop="@dimen/dp_8"
+            android:padding="@dimen/dp_12"
+            android:background="@drawable/button_shape"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_30"/>
+        <TextView
+            android:id="@+id/tvDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium"            android:paddingTop="@dimen/dp_8"
+            android:padding="@dimen/dp_12"
+            android:background="@drawable/button_shape"
+            android:layout_margin="@dimen/dp_30"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg1">
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        >
+
+        <TextView
+            android:id="@+id/tvDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Details, if any"
+            android:textColor="@color/black"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            />
+
+        <EditText
+            android:id="@+id/etTypeHere"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_150"
+            android:hint="Type here..."
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:background="@drawable/rectangle_rounded_corner"
+            android:paddingBottom="@dimen/dp_15"
+            android:paddingTop="@dimen/dp_15"
+            android:paddingLeft="@dimen/dp_15"
+            android:inputType="textMultiLine|textCapWords"
+            android:imeOptions="actionDone"
+            android:gravity="top"
+            android:maxLines="10"
+            android:singleLine="false"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+
+        <TextView
+            android:id="@+id/tvTypeHereError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*Please type here."
+            android:textColor="@color/red"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Submit"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:padding="@dimen/dp_12"
+            android:textColorHint="@color/white"
+            android:background="@drawable/rounded_corner_drawable"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+    </LinearLayout>
+
+</LinearLayout>

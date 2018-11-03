@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg1">
+
+
+        <TextView
+            android:id="@+id/tvInviteSms"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="@string/invite_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/social3" />
+        <TextView
+            android:id="@+id/tvInviteEmail"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/white"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="@string/invite_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/social4" />
+        <TextView
+            android:id="@+id/tvInviteFb"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/white"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="@string/invite_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/social2" />
+        <TextView
+            android:id="@+id/tvInviteWhatsapp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/white"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="@string/invite_whatsapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/social1" />
+
+    </LinearLayout>
+</LinearLayout>

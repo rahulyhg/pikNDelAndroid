@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="none"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/llMenu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_10"
+    android:background="@drawable/gradient_drawer">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llBookExecutive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/dp_5"
+                    android:padding="@dimen/dp_10"
+                    android:gravity="center"
+                    android:background="@drawable/drawable_drawer_single_row"
+                    >
+                    <ImageView
+                        android:id="@+id/ivBookExecutive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/tie_"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvBookExecutive"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="Book Executive"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/dp_5"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llDeliveryStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/dp_5"
+                    android:padding="@dimen/dp_10"
+                    android:gravity="center"
+                    android:background="@drawable/drawable_drawer_single_row"
+                    >
+                    <ImageView
+                        android:id="@+id/ivDeliveryStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/cart_1"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvDeliveryStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="Delivery Status"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/dp_5"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMyPlan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/dp_5"
+                    android:padding="@dimen/dp_10"
+                    android:gravity="center"
+                    android:background="@drawable/drawable_drawer_single_row"
+                    >
+                    <ImageView
+                        android:id="@+id/ivMyPlan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/edit_1" />
+
+                    <TextView
+                        android:id="@+id/tvMyPlan"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="My Plan"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/dp_5"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMyProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/dp_5"
+                    android:padding="@dimen/dp_10"
+                    android:gravity="center"
+                    android:background="@drawable/drawable_drawer_single_row"
+                    >
+                    <ImageView
+                        android:id="@+id/ivMyProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/contact"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvMyProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="My Profile"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/dp_5"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llFavourite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/dp_5"
+                    android:padding="@dimen/dp_10"
+                    android:gravity="center"
+                    android:background="@drawable/drawable_drawer_single_row"
+                    >
+                    <ImageView
+                        android:id="@+id/ivFavourite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/star"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvFavourite"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="Favourite"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/dp_5"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMyWallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/dp_5"
+                    android:padding="@dimen/dp_10"
+                    android:gravity="center"
+                    android:background="@drawable/drawable_drawer_single_row"
+                    >
+                    <ImageView
+                        android:id="@+id/ivMyWallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/wallet"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvMyWallet"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="My Wallet"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/dp_5"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llInviteFriends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/dp_5"
+                    android:padding="@dimen/dp_10"
+                    android:gravity="center"
+                    android:background="@drawable/drawable_drawer_single_row"
+                    >
+                    <ImageView
+                        android:id="@+id/ivInviteFriends"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/user"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvInviteFriends"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="Invite Friends"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/dp_5"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llAboutUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/dp_5"
+                    android:padding="@dimen/dp_10"
+                    android:gravity="center"
+                    android:background="@drawable/drawable_drawer_single_row"
+                    >
+                    <ImageView
+                        android:id="@+id/ivAboutUs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/user_info_2"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvAboutUs"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="About Us"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/dp_5"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llTermsConditions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/dp_5"
+                    android:padding="@dimen/dp_10"
+                    android:gravity="center"
+                    android:background="@drawable/drawable_drawer_single_row"
+                    >
+                    <ImageView
+                        android:id="@+id/ivTermsConditions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/doc"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvTermsConditions"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="@string/terms_conditions"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/dp_5"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llRefund"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/dp_5"
+                    android:padding="@dimen/dp_10"
+                    android:gravity="center"
+                    android:background="@drawable/drawable_drawer_single_row"
+                    >
+                    <ImageView
+                        android:id="@+id/ivRefund"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/wallet"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvRefund"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="Cancellation &amp; \nRefund"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/dp_5"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llPrivacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/dp_5"
+                    android:padding="@dimen/dp_10"
+                    android:gravity="center"
+                    android:background="@drawable/drawable_drawer_single_row"
+                    >
+                    <ImageView
+                        android:id="@+id/ivPrivacy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/doc"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvPrivacy"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="Privacy Policy"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/dp_5"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/dp_5"
+                    android:padding="@dimen/dp_10"
+                    android:gravity="center"
+                    android:background="@drawable/drawable_drawer_single_row"
+                    >
+                    <ImageView
+                        android:id="@+id/ivLogout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/logout"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvLogout"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="Logout"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/dp_5"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
+    </ScrollView>

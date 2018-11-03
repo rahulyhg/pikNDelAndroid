@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg1">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_70"
+                android:focusableInTouchMode="true"
+                android:src="@mipmap/logo"/>
+            <TextView
+                android:id="@+id/tvEnterOTP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enterotp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/lightblack"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_marginTop="@dimen/dp_30"/>
+            <EditText
+                android:id="@+id/etOtp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:hint="Enter OTP"
+                android:imeOptions="actionDone"
+                android:textColorHint="#D1D1D1"
+                android:drawablePadding="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:paddingTop="@dimen/dp_10"
+                android:singleLine="true"
+                android:numeric="integer"
+                android:textColor="@color/white"
+                android:paddingLeft="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_30"
+                android:maxLength="4"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:background="@drawable/rectangle_rounded_corner"
+                android:padding="@dimen/dp_12"
+                />
+            <TextView
+                android:id="@+id/tvError"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Invalid mobile number"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:layout_marginLeft="@dimen/dp_30"
+
+                android:textColor="@color/red"
+                android:layout_marginTop="@dimen/dp_1"/>
+            <TextView
+                android:id="@+id/tvVerify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verify"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:padding="@dimen/dp_12"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:background="@drawable/button_shape"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_40"
+                android:layout_marginLeft="@dimen/dp_40"/>
+
+            <TextView
+                android:id="@+id/tvReceive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Haven't received the OTP yet?"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/lightblack"
+                android:layout_marginTop="@dimen/dp_15"/>
+            <TextView
+                android:id="@+id/tvResetOtp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/resendotp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="italic"
+                android:textColor="@color/blue"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_marginTop="@dimen/dp_8"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

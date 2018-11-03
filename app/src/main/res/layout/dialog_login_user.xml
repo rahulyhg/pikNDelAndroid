@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:background="@drawable/dialog_shape">
+
+
+
+        <TextView
+            android:id="@+id/tvMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/thank_you"
+            android:layout_gravity="top|center_horizontal"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="@dimen/dp_5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thank you for the order. We will get back to you shortly."
+            android:layout_gravity="top|center_horizontal"
+            android:gravity="center"
+            android:textSize="@dimen/sp_15"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/dp_8" />
+
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="@dimen/sp_15"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:paddingLeft="@dimen/dp_60"
+            android:paddingRight="@dimen/dp_60"
+            android:background="@drawable/dialog_button"/>
+
+    </LinearLayout>
+</LinearLayout>
+
